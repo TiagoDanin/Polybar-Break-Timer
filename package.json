@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Take a break",
   "main": "index.js",
+  "bin": {
+    "polybar-break-timer": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TiagoDanin/Polybar-Break-Timer.git"

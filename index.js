@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const polybarHelpers = require('polybar-helpers')
 const notifier = require('node-notifier')
 
