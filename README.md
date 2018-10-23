@@ -2,6 +2,8 @@
 
 Take a break
 
+![image](https://user-images.githubusercontent.com/5731176/47377346-6110db80-d6cb-11e8-8bb6-ec80b61753fb.png)
+
 - Mouse scroll = Set Time
 - Click Left = Enable
 - Click Right = Disable
