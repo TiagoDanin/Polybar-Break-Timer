@@ -81,8 +81,46 @@ baseURL: https://tiagodanin.github.io
 
 
 <div class="uk-container">
-	<h1 id="polybar-break-timer"><a href="#polybar-break-timer">Polybar-Break-Timer</a></h1>
-<p>[WIP]</p>
+	<h1 id="polybar-break-timer"><a href="#polybar-break-timer">Polybar Break Timer</a></h1>
+<p>Take a break</p>
+<ul>
+<li>Mouse scroll = Set Time</li>
+<li>Click Left = Enable</li>
+<li>Click Right = Disable</li>
+</ul>
+<p>Inspired in <a href="https://github.com/GNOME/gnome-break-timer">gnome-break-timer</a>.</p>
+<h2 id="installation"><a href="#installation">Installation</a></h2>
+<p>This is a <a href="https://nodejs.org/">Node.js</a> module available through the
+<a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the
+<a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a>
+or
+<a href="https://yarnpkg.com/en/"><code>yarn</code></a>
+command line tools.</p>
+<pre><code class="hljs language-sh">npm install polybar-break-timer -g</code></pre>
+<h2 id="usage"><a href="#usage">Usage</a></h2>
+<p>Polybar Config:</p>
+<pre><code>; Polybar Break Timer
+[module/breaktimer]
+type = custom/script
+format-prefix = "Break Timer "
+format-foreground = ${colors.verdeclaro}
+exec = polybar-break-timer $HOME/.config/polybar/.env/break-timer 20
+click-left = echo left >> $HOME/.config/polybar/.env/break-timer
+click-middle = echo middle >> $HOME/.config/polybar/.env/break-timer
+click-right = echo right >> $HOME/.config/polybar/.env/break-timer
+scroll-up = echo scrollUp >> $HOME/.config/polybar/.env/break-timer
+scroll-down = echo scrollDown >> $HOME/.config/polybar/.env/break-timer
+tail = true
+</code></pre>
+<p>And create a file in $HOME/.config/polybar/.env/break-timer.</p>
+<h2 id="dependencies"><a href="#dependencies">Dependencies</a></h2>
+<ul>
+<li><a href="https://ghub.io/node-notifier">node-notifier</a>: A Node.js module for sending notifications on native Mac, Windows (post and pre 8) and Linux (or Growl as fallback)</li>
+<li><a href="https://ghub.io/polybar-helpers">polybar-helpers</a>: [WIP] Polybar - Helpers to create plugin/module using NodeJS</li>
+<li><a href="https://ghub.io/tail">tail</a>: tail a file in node</li>
+</ul>
+<h2 id="license"><a href="#license">License</a></h2>
+<p>MIT</p>
 
 
 	<hr class="uk-margin-top-remove uk-divider-icon">
