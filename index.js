@@ -8,9 +8,11 @@ var config = {
 	time: 30
 }
 
-if (process.argv[2]) {
-	config.time = Number(process.argv[1])
+if (process.argv[3]) {
+	config.time = Number(process.argv[3])
 }
+
+const file = process.argv[2] || '.env/break-timer'
 
 const sendNotification = (force) => {
 	if (force || config.isEnable) {
@@ -21,10 +23,10 @@ const sendNotification = (force) => {
 			urgency: 'critical'
 		})
 	}
+	text()
 	return
 }
 
-console.log(config)
 const main = async () => {
 	while (config.isEnable) {
 		await new Promise(resolve => setTimeout(
@@ -45,7 +47,7 @@ const text = () => {
 
 polybarHelpers(
 	(app) => {
-		app.file('/home/tiago/test')
+		app.file(file)
 		app.on('left', (ctx) => {
 			config.isEnable = false
 			text()
@@ -89,3 +91,4 @@ polybarHelpers(
 )
 
 main()
+text()
