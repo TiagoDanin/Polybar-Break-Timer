@@ -1,6 +1,6 @@
 {
   "name": "polybar-break-timer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Take a break",
   "main": "index.js",
   "bin": {

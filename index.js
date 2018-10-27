@@ -49,12 +49,12 @@ polybarHelpers(
 	(app) => {
 		app.file(file)
 		app.on('left', (ctx) => {
-			config.isEnable = false
+			if (config.isEnable) config.isEnable = false
 			text()
 			return
 		})
 		app.on('right', (ctx) => {
-			config.isEnable = true
+			if (!config.isEnable) config.isEnable = true
 			text()
 			main()
 			return
