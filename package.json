@@ -18,8 +18,7 @@
   "homepage": "https://github.com/TiagoDanin/Polybar-Break-Timer#readme",
   "dependencies": {
     "node-notifier": "5.3.0",
-    "polybar-helpers": "1.0.0",
-    "tail": "2.0.0"
+    "polybar-helpers": "1.0.0"
   },
   "devDependencies": {},
   "keywords": [
