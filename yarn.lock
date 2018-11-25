@@ -19,11 +19,11 @@ node-notifier@5.3.0:
     shellwords "^0.1.1"
     which "^1.3.0"
 
-polybar-helpers@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/polybar-helpers/-/polybar-helpers-1.0.0.tgz#c3966eab6d351652e180f429d3fd57d1a1ccd0c4"
+polybar-helpers@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/polybar-helpers/-/polybar-helpers-1.0.2.tgz#b8fb327fb73be5832913b39f5cb3f458579bdf7a"
   dependencies:
-    tail "2.0.0"
+    tail "2.0.1"
 
 semver@^5.5.0:
   version "5.6.0"
@@ -33,9 +33,9 @@ shellwords@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
 
-tail@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tail/-/tail-2.0.0.tgz#ef16cd67fe4842c8c608571cf6228cf2fab6af2a"
+tail@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tail/-/tail-2.0.1.tgz#f4cd9d514512e77d0eb2aaacd5520d578fe20271"
 
 which@^1.3.0:
   version "1.3.1"
