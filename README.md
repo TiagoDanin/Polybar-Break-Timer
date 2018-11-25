@@ -46,7 +46,7 @@ And create a file in $HOME/.config/polybar/.env/break-timer.
 ## Dependencies
 
 - [node-notifier](https://ghub.io/node-notifier): A Node.js module for sending notifications on native Mac, Windows (post and pre 8) and Linux (or Growl as fallback)
-- [polybar-helpers](https://ghub.io/polybar-helpers): [WIP] Polybar - Helpers to create plugin/module using NodeJS
+- [polybar-helpers](https://ghub.io/polybar-helpers): Polybar - Helpers to create plugin/module using NodeJS
 - [tail](https://ghub.io/tail): tail a file in node
 
 ## License
