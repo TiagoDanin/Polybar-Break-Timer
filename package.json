@@ -1,29 +1,42 @@
 {
   "name": "polybar-break-timer",
-  "version": "1.0.1",
-  "description": "Take a break",
   "main": "index.js",
+  "version": "1.0.2",
+  "description": "Take a break",
+  "author": {
+    "name": "Tiago Danin",
+    "email": "TiagoDanin@outlook.com",
+    "url": "https://TiagoDanin.github.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "polybar",
+    "timer",
+    "sleep",
+    "poly",
+    "bar"
+  ],
+  "scripts": {},
+  "private": false,
+  "repository": "https://github.com/TiagoDanin/Polybar-Break-Timer.git",
+  "homepage": "https://TiagoDanin.github.io/Polybar-Break-Timer",
+  "bugs": "https://github.com/TiagoDanin/Polybar-Break-Timer/issues",
+  "github": {
+    "name": "Polybar-Break-Timer",
+    "owner": "TiagoDanin"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "package.json"
+  ],
   "bin": {
     "polybar-break-timer": "index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TiagoDanin/Polybar-Break-Timer.git"
-  },
-  "author": "TiagoDanin <TiagoDanin@outlook.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TiagoDanin/Polybar-Break-Timer/issues"
-  },
-  "homepage": "https://github.com/TiagoDanin/Polybar-Break-Timer#readme",
   "dependencies": {
     "node-notifier": "5.3.0",
     "polybar-helpers": "1.0.2"
   },
-  "devDependencies": {},
-  "keywords": [
-    "polybar",
-    "timer",
-    "sleep"
-  ]
+  "devDependencies": {}
 }
