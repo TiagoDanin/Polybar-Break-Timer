@@ -35,7 +35,7 @@
 		"polybar-break-timer": "index.js"
 	},
 	"dependencies": {
-		"node-notifier": "^5.4.0",
+		"node-notifier": "^5.4.3",
 		"polybar-helpers": "^1.0.2"
 	},
 	"devDependencies": {}
